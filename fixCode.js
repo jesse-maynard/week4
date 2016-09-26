@@ -55,11 +55,8 @@ function weaponAttack(character, weaponName) {
     console.log(character.name + " attacks with his " + weaponName);
     
     var maxDamage;
-    //for(i in character.weapons) {
         var weapon = character.weapons[0];
-        //if(weapon.name == weaponName.toUpperCase()) {
             maxDamage = character.weapons[0].damage;
-      //  }
     console.log("He hits for " + Math.floor( Math.random() * maxDamage ) + " damage");
 }
 //}
